@@ -27,7 +27,11 @@ release = '0.0.0'
 
 # -- General configuration ---------------------------------------------------
 
+# Hosting Options
 master_doc = 'index'
+
+# Theme
+RTD_NEW_THEME = True
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
