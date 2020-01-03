@@ -10,7 +10,10 @@ Welcome to DCF's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   overview/index
+   getting_started/index
+   cli/index
+   tutorial/index
 
 * :ref:`genindex`
 * :ref:`modindex`

@@ -20,7 +20,7 @@ from recommonmark.parser import CommonMarkParser
 
 # -- Project information -----------------------------------------------------
 
-project = 'DCF-docs'
+project = 'Digital Companion Framework'
 copyright = '2020, DCF contributors'
 author = 'DCF contributors'
 
