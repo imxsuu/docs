@@ -57,18 +57,18 @@ functions:
       dir: ./src							
       file: ""								
       name: Handler							
-    docker_registry: keti.asuscomm.com:5001 // DCF의 사설 도커 레지스트리 주소
-    image: keti.asuscomm.com:5001/stft		// 빌드할 도커 이미지 이름
-    limits:									// 함수 컨테이너 리소스 설정
-      memory: ""							// 메모리 설정
-      cpu: ""								// CPU 코어 설정
-      gpu: ""								// GPU 개수 설정
-    build_args:								// GPU, OS 설정
-    - CUDA_VERSION=9.0						// CUDA 버전 설정
-    - CUDNN_VERSION=7						// CUDNN 버전 설정
-    - UBUNTU_VERSION=16.04					// OS 설정
-dcf:										// DCF 관련 설정
-  gateway: keti.asuscomm.com:32222			// Gateway 주소
+    docker_registry: keti.asuscomm.com:5001 
+    image: keti.asuscomm.com:5001/stft		
+    limits:									
+      memory: ""							
+      cpu: ""								
+      gpu: ""								
+    build_args:								
+    - CUDA_VERSION=9.0						
+    - CUDNN_VERSION=7						
+    - UBUNTU_VERSION=16.04					
+dcf:										
+  gateway: keti.asuscomm.com:32222			
 ```
 
 `config.yaml`파일 구성은 위와 같으며 각 필드에 대한 상세 설명은 다음과 같다.
