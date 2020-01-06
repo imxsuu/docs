@@ -4,6 +4,7 @@ CLI
 .. toctree::
    :maxdepth: 2
 
+   introduction
    requirements
    installation
    runtime_list
