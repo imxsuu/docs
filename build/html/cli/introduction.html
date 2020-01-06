@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>deploy function &mdash; Digital Companion Framework 0.0.1 문서</title>
+  <title>Introduction &mdash; Digital Companion Framework 0.0.1 문서</title>
   
 
   
@@ -36,8 +36,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="색인" href="../genindex.html" />
     <link rel="search" title="검색" href="../search.html" />
-    <link rel="next" title="delete function" href="delete_function.html" />
-    <link rel="prev" title="test function" href="test_function.html" /> 
+    <link rel="next" title="Requirements" href="requirements.html" />
+    <link rel="prev" title="CLI" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,7 +86,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">CLI</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="requirements.html">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html">installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="runtime_list.html">runtime list</a></li>
@@ -94,7 +94,7 @@
 <li class="toctree-l2"><a class="reference internal" href="write_handler.html">write handler</a></li>
 <li class="toctree-l2"><a class="reference internal" href="build_function.html">build function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="test_function.html">test function</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">deploy function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy_function.html">deploy function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="delete_function.html">delete function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="function_list.html">function list</a></li>
 <li class="toctree-l2"><a class="reference internal" href="invoke_function.html">invoke function</a></li>
@@ -150,13 +150,13 @@
         
           <li><a href="index.html">CLI</a> &raquo;</li>
         
-      <li>deploy function</li>
+      <li>Introduction</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/cli/deploy_function.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/cli/introduction.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -169,8 +169,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="deploy-function">
-<h1>deploy function<a class="headerlink" href="#deploy-function" title="제목 주소">¶</a></h1>
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="제목 주소">¶</a></h1>
+<p>Digital Companion Framework(이하 DCF)의 CLI는 아래와 기능에 한에서 DCF와 상호작용을 할 수 있다.</p>
+<ol class="simple">
+<li><p>함수 런타임 목록 조회</p></li>
+<li><p>함수 생성</p></li>
+<li><p>함수 빌드</p></li>
+<li><p>함수 테스트</p></li>
+<li><p>함수 배포</p></li>
+<li><p>함수 삭제</p></li>
+<li><p>함수 호출</p></li>
+<li><p>함수 로그 확인</p></li>
+</ol>
+<p>DCF의 함수관리는 CLI를 통해서만 이루어지게 되며, DCF에 배포된 함수는 CLI 혹은 개발자의 클라이언트 프로그램을 이용해서 호출할 수 있다. 전체 DCF의 함수 라이프 사이클은 아래와 같다.</p>
+<p><img alt="DCF 함수 라이프사이클" src="https://user-images.githubusercontent.com/13328380/71800226-d97a7700-309a-11ea-9c56-c95230ebab4f.png" /></p>
 </div>
 
 
@@ -181,10 +194,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="delete_function.html" class="btn btn-neutral float-right" title="delete function" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="requirements.html" class="btn btn-neutral float-right" title="Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="test_function.html" class="btn btn-neutral float-left" title="test function" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="CLI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
