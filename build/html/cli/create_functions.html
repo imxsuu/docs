@@ -238,27 +238,27 @@ Config file written: config.yaml
 <div class="section" id="config-yaml">
 <h3>2-1. config.yaml<a class="headerlink" href="#config-yaml" title="제목 주소">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">config.yaml</span></code>파일은 Digital Companion Framework에 대한 정보와 함수 컨테이너에 대한 설정값을 포함하고 있다.</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span>functions:
-  stft: 									
-    runtime: python 						
-    desc: &quot;&quot; 								
-    maintainer: &quot;&quot;							
-    handler:								
-      dir: ./src							
-      file: &quot;&quot;								
-      name: Handler							
-    docker_registry: keti.asuscomm.com:5001 
-    image: keti.asuscomm.com:5001/stft		
-    limits:									
-      memory: &quot;&quot;							
-      cpu: &quot;&quot;								
-      gpu: &quot;&quot;								
-    build_args:								
-    - CUDA_VERSION=9.0						
-    - CUDNN_VERSION=7						
-    - UBUNTU_VERSION=16.04					
-dcf:										
-  gateway: keti.asuscomm.com:32222			
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">functions</span><span class="p">:</span>
+  <span class="n">stft</span><span class="p">:</span> 									
+    <span class="n">runtime</span><span class="p">:</span> <span class="n">python</span> 						
+    <span class="n">desc</span><span class="p">:</span> <span class="s2">&quot;&quot;</span> 								
+    <span class="n">maintainer</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>							
+    <span class="n">handler</span><span class="p">:</span>								
+      <span class="nb">dir</span><span class="p">:</span> <span class="o">./</span><span class="n">src</span>							
+      <span class="n">file</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>								
+      <span class="n">name</span><span class="p">:</span> <span class="n">Handler</span>							
+    <span class="n">docker_registry</span><span class="p">:</span> <span class="n">keti</span><span class="o">.</span><span class="n">asuscomm</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="mi">5001</span> 
+    <span class="n">image</span><span class="p">:</span> <span class="n">keti</span><span class="o">.</span><span class="n">asuscomm</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="mi">5001</span><span class="o">/</span><span class="n">stft</span>		
+    <span class="n">limits</span><span class="p">:</span>									
+      <span class="n">memory</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>							
+      <span class="n">cpu</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>								
+      <span class="n">gpu</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>								
+    <span class="n">build_args</span><span class="p">:</span>								
+    <span class="o">-</span> <span class="n">CUDA_VERSION</span><span class="o">=</span><span class="mf">9.0</span>						
+    <span class="o">-</span> <span class="n">CUDNN_VERSION</span><span class="o">=</span><span class="mi">7</span>						
+    <span class="o">-</span> <span class="n">UBUNTU_VERSION</span><span class="o">=</span><span class="mf">16.04</span>					
+<span class="n">dcf</span><span class="p">:</span>										
+  <span class="n">gateway</span><span class="p">:</span> <span class="n">keti</span><span class="o">.</span><span class="n">asuscomm</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="mi">32222</span>			
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">config.yaml</span></code>파일 구성은 위와 같으며 각 필드에 대한 상세 설명은 다음과 같다.</p>
@@ -306,11 +306,11 @@ dcf:
 <div class="section" id="requirements-txt">
 <h3>2-2. requirements.txt<a class="headerlink" href="#requirements-txt" title="제목 주소">¶</a></h3>
 <p>Python 런타임에서 필요한 의존성패키지 리스트를 적는다. 아래는 requirements.txt의 예시를 보여준다.</p>
-<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>numpy==1.16.4
-matplotlib
-scipy==1.0.0
-pillow
-wavio
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">numpy</span><span class="o">==</span><span class="mf">1.16</span><span class="o">.</span><span class="mi">4</span>
+<span class="n">matplotlib</span>
+<span class="n">scipy</span><span class="o">==</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">pillow</span>
+<span class="n">wavio</span>
 </pre></div>
 </div>
 </div>

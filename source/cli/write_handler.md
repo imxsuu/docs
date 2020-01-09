@@ -207,7 +207,7 @@ class Handler:
 
 **requirements.txt**
 
-```txt
+```
 Pillow
 ```
 
