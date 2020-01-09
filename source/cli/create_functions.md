@@ -1,6 +1,37 @@
-# Create functions
+# DCF Function Component
 
-Digital Companion Framework에서 사용하는 함수 템플릿을 생성한다.
+Digital Companion Framework는 마이크로 아키텍쳐 서비스 기반 프레임워크이며 인공지능 모델을 서빙(Serving)을 지원하는 목적으로 만들어졌다. 인공지능 모델 서빙(Serving)시 기본 배포단위는 함수(Function)다. 함수(Function)는 두 가지 컴포넌트로 구성된다.
+
+1. Digital Companion Framework와 데이터 및 함수 컨테이너의 정보를 수집 역활을 하는 와쳐(Watcher)
+2. 사용자가 정의한 인공지능 모델 함수
+
+
+
+Digital Companion Framework는 기본적으로 함수 컨테이너에 데이터를 전송하고 정보를 수집하는 와쳐(Watcher)를 제공한다. 따라서 사용자는 오로지 **인공지능 모델 함수**만 작성하면 된다.
+
+
+
+본 챕터에서는 **인공지능 모델 함수**작성을 위한 함수 생성 방법과 구조에 대해서 설명한다.
+
+
+
+## 1. Create Function
+
+사용자가 함수를 만들기 위해서는 아래와 같은 과정을 거쳐야한다.
+
+1. Digital Companion Framework에서 제공하는 기본 함수 컴포넌트 템플릿 생성
+2. 기본 함수 컴포넌트 내에서 사용자가 정의한 인공지능 모델 작성
+3. 작성된 함수 빌드
+4. 빌드된 함수 작동 테스트
+5. Digital Companion Framework에 함수 배포
+
+
+
+사용자가 인공지능 모델 함수 컴포넌트를 작성하려면 먼저 Digital Companion Framework에서 제공하는 함수 템플릿을 받아와야한다. 함수 템플릿은 CLI를 통해서만 생성할 수 있다. 
+
+
+
+아래 명령어는 함수 템플릿을 생성하는 CLI 명령어이다.
 
 ```bash
 $ dcf-cli function init [function name] --runtime [runtime] -f [name of configuration yaml file. default name is config.yaml] --gateway [dcf gateway address]
@@ -22,7 +53,7 @@ Config file written: config.yaml
 
 
 
-## 1. Structure
+## 2. Function Template
 
 함수를 생성하면 기본적으로 함수 이름과 같은 폴더가 생성된다. 폴더 내부는 아래와 같은 파일들이 생성된다.
 
@@ -43,7 +74,7 @@ Config file written: config.yaml
 
 
 
-### 1-1. config.yaml
+### 2-1. config.yaml
 
 `config.yaml`파일은 Digital Companion Framework에 대한 정보와 함수 컨테이너에 대한 설정값을 포함하고 있다.
 
@@ -96,7 +127,7 @@ dcf:
 
 
 
-### 1-2. requirements.txt
+### 2-2. requirements.txt
 
 Python 런타임에서 필요한 의존성패키지 리스트를 적는다. 아래는 requirements.txt의 예시를 보여준다.
 
@@ -110,13 +141,13 @@ wavio
 
 
 
-### 1.3 Dockerfile
+### 2.3 Dockerfile
 
 함수 컨테이너의 베이스 도커 이미지다. 함수를 빌드하게되면 해당 Dockerfile을 기반으로 함수 컨테이너를 빌드하게 된다.
 
 
 
-### 1.4 src/handler.py
+### 2.4 src/handler.py
 
 Python 런타임에서 실제 함수 내용이 작성되는 파일이다. 기본적으로 제공되는 함수 내용은 아래와 같다.
 
