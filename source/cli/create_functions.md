@@ -78,7 +78,7 @@ Config file written: config.yaml
 
 `config.yaml`파일은 Digital Companion Framework에 대한 정보와 함수 컨테이너에 대한 설정값을 포함하고 있다.
 
-```yaml
+```
 functions:
   stft: 									
     runtime: python 						
@@ -131,7 +131,7 @@ dcf:
 
 Python 런타임에서 필요한 의존성패키지 리스트를 적는다. 아래는 requirements.txt의 예시를 보여준다.
 
-```txt
+```
 numpy==1.16.4
 matplotlib
 scipy==1.0.0
