@@ -15,7 +15,7 @@ Digital Companion Framework는 기본적으로 함수 컨테이너에 데이터�
 
 
 
-## 1. Create Function
+## Create Function
 
 사용자가 함수를 만들기 위해서는 아래와 같은 과정을 거쳐야한다.
 
@@ -53,7 +53,7 @@ Config file written: config.yaml
 
 
 
-## 2. Function Template
+## Function Template
 
 함수를 생성하면 기본적으로 함수 이름과 같은 폴더가 생성된다. 폴더 내부는 아래와 같은 파일들이 생성된다.
 
@@ -74,7 +74,7 @@ Config file written: config.yaml
 
 
 
-### 2-1. config.yaml
+### config.yaml
 
 `config.yaml`파일은 Digital Companion Framework에 대한 정보와 함수 컨테이너에 대한 설정값을 포함하고 있다.
 
@@ -127,7 +127,7 @@ dcf:
 
 
 
-### 2-2. requirements.txt
+### requirements.txt
 
 Python 런타임에서 필요한 의존성패키지 리스트를 적는다. 아래는 requirements.txt의 예시를 보여준다.
 
@@ -141,13 +141,13 @@ wavio
 
 
 
-### 2.3 Dockerfile
+### Dockerfile
 
 함수 컨테이너의 베이스 도커 이미지다. 함수를 빌드하게되면 해당 Dockerfile을 기반으로 함수 컨테이너를 빌드하게 된다.
 
 
 
-### 2.4 src/handler.py
+### src/handler.py
 
 Python 런타임에서 실제 함수 내용이 작성되는 파일이다. 기본적으로 제공되는 함수 내용은 아래와 같다.
 

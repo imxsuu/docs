@@ -10,13 +10,7 @@ CLI
    runtime_list
    create_functions
    write_handler
-   build_function
-   test_function
-   deploy_function
-   delete_function
-   function_list
-   invoke_function
-   log
+   deploy_invoke_function
    troubleshooting
 
 * :ref:`genindex`
