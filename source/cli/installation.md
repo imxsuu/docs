@@ -7,7 +7,7 @@ DCF CLI를 설치하는 방법은 두 가지 방법으로 설치할 수 있다.
 
 
 
-## 1. Donwload Binary
+## Donwload Binary
 
 ```bash
 $ wget https://github.com/DigitalCompanion-KETI/DCFramework/releases/download/v1.0.0/dcf-cli
@@ -17,11 +17,11 @@ $ mv dcf-cli /usr/bin
 
 
 
-## 2. Compile from Source Code
+## Compile from Source Code
 
 
 
-### 2-1. Clone pb from GitHub
+### Clone pb from GitHub
 
 먼저 Go 패키지 관련 디렉토리가 있는지 확인한다. 만약 없다면 디렉토리를 생성한다.
 
@@ -43,7 +43,7 @@ $ sudo chown -R $USER pb
 
 
 
-### 2-2. Clone CLI from GitHub
+### Clone CLI from GitHub
 
 Digital Companion Framework의 CLI를 다운받는다.
 
@@ -57,7 +57,7 @@ $ sudo chown -R $USER dcf-cli
 
 
 
-### 2-3. Build CLI
+### Build CLI
 
 아래 명령어를 이용하여 CLI를 빌드한다.
 
@@ -69,7 +69,7 @@ $ go install
 
 
 
-## 3. Configure Private Docker Registry
+## Configure Private Docker Registry
 
 Digital Companion Framework의 사설 도커 저장소에 로그인하기 위한 설정을 진행한다.
 
@@ -77,7 +77,7 @@ Digital Companion Framework의 사설 도커 저장소에 로그인하기 위한
 
 
 
-### 3-1. Insecure registry
+### Insecure registry
 
 Docker의 `daemon.json`파일을 아래와 같이 작성한다.
 
@@ -112,7 +112,7 @@ Insecure Registries:
 
 
 
-### 3-2. Login Docker Registry
+### Login Docker Registry
 
 Digital Companion Framework의 사설 도커 저장소에 로그인한다.
 
