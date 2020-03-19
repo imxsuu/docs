@@ -1,6 +1,6 @@
 # Requirements
 
-CLI를 설치하기 위해서는 아래와 같은 의존성 소프트웨어가 설치되어있어야 한다.
+CLI를 설치하기 위해서는 아래와 같은 의존성 소프트웨어가 설치되어 있어야 한다.
 
 
 
@@ -14,13 +14,13 @@ CLI를 설치하기 위해서는 아래와 같은 의존성 소프트웨어가 �
 
 - Golang
 
-  DCF CLI를 소스코드에서 컴파일하게 될 경우 Golang이 설치되어있어야한다.
+  DCF CLI를 소스코드에서 컴파일하게 될 경우 Golang이 설치되어 있어야 한다.
 
 
 
 ## Install Golang
 
-공식 Go 다운로드 홈페이지](https://golang.org/doc/install)에서 자신의 환경에 맞게 설치파일을 다운로드 받는다.
+공식 Go 다운로드 홈페이지](https://golang.org/doc/install)에서 자신의 환경에 맞게 설치파일을 다운로드한다.
 
 설치파일을 압축 해제하고, `go` 폴더를 `/usr/local`로 옮긴다.
 
@@ -31,7 +31,7 @@ $ sudo mv go /usr/local
 
 
 
-`~/.bashrc`파일을 수정하여 환경변수 설정을 진행 및 적용한다
+`~/.bashrc`파일을 수정하여 환경변수 설정을 진행 및 적용한다.
 
 ```bash
 $ vim ~/.bashrc
