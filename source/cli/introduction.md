@@ -1,6 +1,6 @@
 # Introduction
 
-Digital Companion Framework(이하 DCF)의 CLI는 아래와 기능에 한에서 DCF와 상호작용을 할 수 있다.
+Digital Companion Framework(이하 DCF)의 CLI는 아래와 같은 기능에 한하여 DCF와 상호작용을 할 수 있다.
 
 
 

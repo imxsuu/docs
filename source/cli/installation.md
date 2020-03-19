@@ -1,6 +1,6 @@
 # Installation
 
-DCF CLI를 설치하는 방법은 두 가지 방법으로 설치할 수 있다.
+DCF CLI는 아래 두 가지 방법으로 설치할 수 있다.
 
 1. 바이너리 파일 다운로드
 2. 소스코드 컴파일
@@ -23,7 +23,7 @@ $ mv dcf-cli /usr/bin
 
 ### Clone pb from GitHub
 
-먼저 Go 패키지 관련 디렉토리가 있는지 확인한다. 만약 없다면 디렉토리를 생성한다.
+먼저 Go 패키지 관련 디렉토리가 있는지 확인하고, 없다면 디렉토리를 생성한다.
 
 ```bash
 $ mkdir -p $GOPATH/src/github.com/digitalcompanion-keti
@@ -31,7 +31,7 @@ $ mkdir -p $GOPATH/src/github.com/digitalcompanion-keti
 
 
 
-Digital Companion Framework의 pb를 다운받는다.
+Digital Companion Framework의 pb를 다운로드한다.
 
 ```bash
 $ cd $GOPATH/src/github.com/digitalcompanion-keti
@@ -45,7 +45,7 @@ $ sudo chown -R $USER pb
 
 ### Clone CLI from GitHub
 
-Digital Companion Framework의 CLI를 다운받는다.
+Digital Companion Framework의 CLI를 다운로드한다.
 
 ```bash
 $ cd $GOPATH/src/github.com/digitalcompanion-keti
@@ -73,7 +73,7 @@ $ go install
 
 Digital Companion Framework의 사설 도커 저장소에 로그인하기 위한 설정을 진행한다.
 
-해당 예제에서는 전자부품연구원에서 제공하는 사설 도커 저장소의 IP를 입력한다. 만약 사용자의 컴퓨팅 환경에서 사설 도커 저장소를 구축하였다면 사용자의 사설 도커 저장소의 IP 정보를 입력한다.
+아래 예제에서는 전자부품연구원에서 제공하는 사설 도커 저장소의 IP를 입력한다. 만약 사용자의 컴퓨팅 환경에서 사설 도커 저장소를 구축하였다면 사용자의 사설 도커 저장소의 IP 정보를 입력한다.
 
 
 
