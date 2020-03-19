@@ -1,3 +1,4 @@
+
 # Function Component
 
 DCF는 마이크로 아키텍처 서비스 기반 프레임워크이며 인공지능 모델 서빙(Serving)을 지원하는 목적으로 만들어졌다. 인공지능 모델 서빙(Serving) 시 기본 배포 단위는 함수(Function)이다. 함수(Function)는 두 가지 컴포넌트로 구성된다.
@@ -63,7 +64,8 @@ Config file written: config.yaml
 ├── Dockerfile
 ├── requirements.txt
 └── src
-    └── handler.py
+    └── handler.py
+
 ```
 
 - `config.yaml` : DCF에 대한 정보, 배포되는 함수 컨테이너에 대한 설정 값
@@ -154,6 +156,7 @@ Python 런타임에서 실제 함수 내용이 작성되는 파일이다. 기본
 class Handler:
     def __init__(self):
         pass
+
     def __call__(self, req):
         return req.input
 ```
