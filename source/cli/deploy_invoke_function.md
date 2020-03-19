@@ -46,7 +46,7 @@ keti.asuscomm.com:5001/tensorflow-gpu     latest                         28aa05b
 keti.asuscomm.com:5001/function-test      latest                         ba5f1e8b441e        3 months ago        3.25GB
 ```
 
-*빌드를 할 때에는 -f 옵션을 항상 추가해 주어야 한다.*
+*빌드를 할 때에는 `-f` 옵션을 항상 추가해 주어야 한다.*
 
 
 
@@ -403,7 +403,7 @@ $ dcf-cli function log <function-name>
 
 ### Log Options
 
-`log`  명령어에도 gateway 주소를 설정할 수 있는 옵션이 있다. 옵션은 다음과 같은 방법으로 확인할 수 있다.
+`log`명령어에도 gateway 주소를 설정할 수 있는 옵션이 있다. 옵션은 다음과 같은 방법으로 확인할 수 있다.
 
 ```
 $ dcf-cli fn log --help
